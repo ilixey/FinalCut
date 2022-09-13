@@ -13,7 +13,7 @@
 <div>       <!-- content -->
     <div>    <!-- buttons holder -->
         <button onclick="location.href='/list'">List users</button>
-        <button onclick="location.href='/add'">Add user</button>
+        <button onclick="location.href='http://34.125.72.177:8085/add'">Add user</button>
     </div>
 </div>
 </body>
