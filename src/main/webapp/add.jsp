@@ -16,8 +16,12 @@
         <input type="text" name="name"><br />
     </label>
 
-    <label>Password:
-        <input type="password" name="pass"><br />
+    <label>Surname:
+        <input type="text" name="surname"><br />
+    </label>
+
+    <label>age:
+        <input type="text" name="age"><br />
     </label>
     <button type="submit">Submit</button>
 </form>
