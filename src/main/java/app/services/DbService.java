@@ -12,7 +12,12 @@ public class DbService {
     private Connection connection = DatabaseHandler.makeConnection();
 
     public void addUser(User user) throws SQLException {
-        String request = "INSERT INTO users (name, surname, age) VALUES (" + user.getName() + "," + user.getSurname() + "," + user.getAge() + ");";
+        String request = "INSERT INTO test.users (name, surname, age) VALUES (?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(request);
+        preparedStatement.setString(1, user.getName());
+        preparedStatement.setString(2, user.getSurname());
+        preparedStatement.setInt(3, user.getAge());
+        preparedStatement.execute();
+        preparedStatement.close();
     }
 }
